@@ -4,7 +4,7 @@ from datetime import datetime
 
 OUTPUT_FILENAME = 'output/Dantri/Dantri_{}.txt'.format(datetime.now().strftime('%Y%m%d_%H%M%S'))
 
-class VnexpressSpider(scrapy.Spider):
+class DantriSpider(scrapy.Spider):
     name = 'Dantri'
     start_urls = ['https://dantri.com.vn/xa-hoi/thu-tuong-xu-ly-sao-voi-o-dich-covid-19-o-do-thi-lon-nhu-ha-noi-tphcm-20200807115954397.htm']
     allowed_domains = ['dantri.com.vn']
